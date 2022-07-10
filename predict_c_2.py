@@ -97,8 +97,8 @@ class predict():
 #model1
     def finallmainmodel1(self,):
         file=pd.read_csv(self.path)
-        print(file.shape)
-        print(len(file))
+        # print(file.shape)
+        # print(len(file))
         for i in range(1, (len(file) //64) + 2):
             # print(i)
             if (i *64) < len(file):
@@ -131,8 +131,8 @@ class predict():
 #model2
     def finallmainmodel2(self, ):
         file = pd.read_csv(self.path)
-        print(file.shape)
-        print(len(file))
+        # print(file.shape)
+        # print(len(file))
         for i in range(1, (len(file) // 64) + 2):
             # print(i)
             if (i * 64) < len(file):
@@ -165,8 +165,8 @@ class predict():
 #model3
     def finallmainmodel3(self, ):
         file = pd.read_csv(self.path)
-        print(file.shape)
-        print(len(file))
+        # print(file.shape)
+        # print(len(file))
         for i in range(1, (len(file) // 64) + 2):
             # print(i)
             if (i * 64) < len(file):
@@ -208,9 +208,9 @@ class predict():
                count1+=1
                self.save_flow_member.append(1)
                self.save_flow_name.append('Abnormal')
-        print("0", count0);print("1", count1);
-        print(self.save_flow_member)
-        print(self.save_flow_name)
+        # print("0", count0);print("1", count1)
+        # print(self.save_flow_member)
+        # print(self.save_flow_name)
         self.save_excel()
     def judgment(self,pmodel1,pmodel2,pmodel3):
         if (pmodel1==pmodel2==pmodel3 and pmodel1==0) or (pmodel1==pmodel2 and pmodel1==0) or (pmodel1==pmodel3 and pmodel3==0) or (pmodel2==pmodel3 and pmodel2==0):

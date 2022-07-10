@@ -135,7 +135,7 @@ class pcap_cut():
         for i in range(0, length):
             quinturple = cap_quinturple(spr[i])
             self.judge(quinturple, sum)  # 步长为1，逐个提取当前流量
-            print(i)
+            # print(i)
         return sum
 
     def read_pcap2(self,savename,pool,num=20):  # 一次性全部读入
